@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.wyeming95-rgb/tech-stack-detector",
+  "title": "Website Tech Stack Detector",
+  "description": "Detect ecommerce platform, CMS, analytics, ad pixels, CDN and payments on any list of URLs",
+  "repository": {
+    "url": "https://github.com/wyeming95-rgb/smartmoney-data-mcp",
+    "source": "github",
+    "subfolder": "servers/tech-stack-detector"
+  },
+  "websiteUrl": "https://apify.com/smartmoney-data/tech-stack-detector",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?actors=smartmoney-data/tech-stack-detector",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token, sent as 'Bearer <apify-api-token>'. Get one at https://console.apify.com/account/integrations",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

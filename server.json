@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.wyeming95-rgb/smartmoney-data",
+  "title": "Smart Money Data (SEC, 13F, Congress, Insider Trades)",
+  "description": "SEC filings, 13F, Form 4 insider trades, Congress trades, short interest and PDUFA dates via Apify",
+  "repository": {
+    "url": "https://github.com/wyeming95-rgb/smartmoney-data-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/smartmoney-data",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?actors=smartmoney-data/sec-insider-trades-tracker,smartmoney-data/congress-stock-trades-tracker,smartmoney-data/sec-13f-hedge-fund-tracker,smartmoney-data/hedge-fund-13f-consensus,smartmoney-data/institutional-ownership-by-ticker,smartmoney-data/sec-13d-13g-activist-stakes,smartmoney-data/sec-form-144-planned-insider-sales,smartmoney-data/sec-8k-material-events,smartmoney-data/sec-edgar-filings,smartmoney-data/us-company-financials,smartmoney-data/short-squeeze-radar,smartmoney-data/dark-pool-volume-tracker,smartmoney-data/trading-halts-suspensions-monitor,smartmoney-data/red-flag-radar,smartmoney-data/biotech-catalyst-calendar,smartmoney-data/washington-money-contracts-lobbying,smartmoney-data/smart-money-confluence-score,smartmoney-data/smart-money-watchlist-alerts,smartmoney-data/polymarket-smart-money",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token, sent as 'Bearer <apify-api-token>'. Get one at https://console.apify.com/account/integrations",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

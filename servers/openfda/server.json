@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.wyeming95-rgb/openfda-recalls",
+  "title": "FDA Recall Checker (openFDA)",
+  "description": "Check products against FDA food, drug and device recalls; drug labels, NDC, 510(k) via openFDA",
+  "repository": {
+    "url": "https://github.com/wyeming95-rgb/smartmoney-data-mcp",
+    "source": "github",
+    "subfolder": "servers/openfda"
+  },
+  "websiteUrl": "https://apify.com/smartmoney-data/openfda",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?actors=smartmoney-data/openfda",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token, sent as 'Bearer <apify-api-token>'. Get one at https://console.apify.com/account/integrations",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
