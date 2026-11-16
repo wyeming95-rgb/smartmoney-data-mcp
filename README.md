@@ -1,6 +1,6 @@
 # Smart Money Data MCP
 
-Remote MCP servers for the [smartmoney-data](https://apify.com/smartmoney-data) Apify Actors: SEC EDGAR filings, Form 4 insider trades, 13F hedge fund holdings, Congress stock trades, 13D/13G activist stakes, Form 144 planned sales, 8-K events, company financials (XBRL), short interest, dark pool volume, trading halts, PDUFA / biotech catalysts, Polymarket whales, plus an FDA recall checker and a website tech stack detector.
+Remote MCP servers for the [smartmoney-data](https://apify.com/smartmoney-data) Apify Actors: SEC EDGAR filings, Form 4 insider trades, 13F hedge fund holdings, Congress stock trades, 13D/13G activist stakes, Form 144 planned sales, 8-K events, company financials (XBRL), short interest, dark pool volume, trading halts, PDUFA / biotech catalysts, Polymarket whales, plus an FDA recall checker.
 
 Nothing to install. Each server is the hosted [Apify MCP server](https://docs.apify.com/platform/integrations/mcp) (`https://mcp.apify.com`, streamable HTTP) with a fixed set of Actors loaded. Data comes from official public sources (SEC EDGAR, FINRA, Nasdaq Trader, House/Senate STOCK Act disclosures, openFDA, ClinicalTrials.gov, USAspending, LDA).
 
@@ -14,7 +14,6 @@ Use an Apify API token in the `Authorization: Bearer <token>` header (get one at
 |---|---|
 | `io.github.wyeming95-rgb/smartmoney-data` (all 19 finance Actors) | see [`server.json`](server.json) |
 | `io.github.wyeming95-rgb/openfda-recalls` | `https://mcp.apify.com/?actors=smartmoney-data/openfda` |
-| `io.github.wyeming95-rgb/tech-stack-detector` | `https://mcp.apify.com/?actors=smartmoney-data/tech-stack-detector` |
 
 Single-Actor endpoint pattern: `https://mcp.apify.com/?actors=smartmoney-data/<actor-name>`. Combine several with commas: `?actors=smartmoney-data/a,smartmoney-data/b`.
 
@@ -42,7 +41,6 @@ Single-Actor endpoint pattern: `https://mcp.apify.com/?actors=smartmoney-data/<a
 | [smart-money-watchlist-alerts](https://apify.com/smartmoney-data/smart-money-watchlist-alerts) | New insider, 13D, Form 144 and Congress events for a watchlist |
 | [polymarket-smart-money](https://apify.com/smartmoney-data/polymarket-smart-money) | Polymarket whale trades and top traders |
 | [openfda](https://apify.com/smartmoney-data/openfda) | FDA food, drug and device recalls (openFDA) |
-| [tech-stack-detector](https://apify.com/smartmoney-data/tech-stack-detector) | Website tech stack detection |
 
 ## Client config example
 
